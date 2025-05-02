@@ -6,13 +6,11 @@ import java.io.OutputStream;
 import java.util.Properties;
 import Test.dosCincoCinco;
 
-
 public class PropertiesFile {
 
     static Properties properties = new Properties();
 
     public static void main(String[] args) {
-
         readPropertiesFile();
         writePropertiesFile();
 //        readPropertiesFile();
@@ -24,10 +22,9 @@ public class PropertiesFile {
             InputStream input = new FileInputStream("/Users/255_Studio/Documents/Dev-Projects/255mx/src/main/java/config/config.properties");
             properties.load(input);
             properties.getProperty("browser");
-            System.out.println(properties.getProperty("browser"));
-
-
+            //System.out.println(properties.getProperty("browser"));
             dosCincoCinco.browser = properties.getProperty("browser");
+            System.out.println(dosCincoCinco.browser);
 
         } catch (Exception e) {
             e.printStackTrace();
