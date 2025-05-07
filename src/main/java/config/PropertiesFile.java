@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 import Test.dosCincoCinco;
+import Test.productosTest;
 
 public class PropertiesFile {
 
